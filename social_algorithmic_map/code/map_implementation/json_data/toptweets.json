@@ -1,0 +1,112 @@
+[
+    {
+        "count": "212",
+        "account": "@ThisIsRobThomas",
+        "tweet": "I've watched CNN all day and now I'm fairly certain that ISIS is going to give me Ebola",
+        "source": "New York, USA",
+        "location": {
+            "lat": 40.7127837,
+            "lng": -74.0059413
+        },
+        "time": "Thursday, October 16, 14"
+    },
+    {
+        "count": "97",
+        "account": "@CNNMex",
+        "tweet": "Foto de la NASA muestra al Sol con un 'disfraz' para Halloween  http://t.co/rFSADAgepX http://t.co/cbX9F60gij",
+        "source": "Mexico",
+        "location": {
+            "lat": 23.634501,
+            "lng": -102.552784
+        },
+        "time": "Thursday, October 16, 14"
+    },
+    {
+        "count": "150",
+        "account": "@AlbertBrooks",
+        "tweet": "If someone on that missing Malaysian flight had ebola CNN might just explode",
+        "source": "Los Angeles, USA",
+        "location": {
+            "lat": 34.0522342,
+            "lng": -118.2436849
+        },
+        "time": "Thursday, October 16, 14"
+    },
+    {
+        "count": "110",
+        "account": "@domoboku",
+        "tweet": "それぞれの最重要課題まとめ BBCトップページ「エボラやべぇ」 NYタイムズ「エボラやべぇ」 CNN「エボラやべぇ」 ワシントンポスト「エボラやべぇ」 USAトゥデイ「エボラやべぇ」 国会「これはウチワに見えますが〜」",
+        "source": "japan",
+        "location": {
+            "lat": 36.204824,
+            "lng": 138.252924
+        },
+        "time": "Thursday, October 16, 14"
+    },
+    {
+        "count": "50",
+        "account": "",
+        "tweet": "Cnn'deki akp'li hukuk\u008dunun konu_mas\u00f5ndan anlad\u00f5_\u00f5m: Kanunlar\u00f5 her muhalifi bir bahane uydurup i\u008deri atabilecek _ekilde ",
+        "source": "Istanbul, Turkey",
+        "location": {
+            "lat": 41.00527,
+            "lng": 28.97696
+        },
+        "time": "Thursday, October 16, 14"
+    },
+    {
+        "count": "97",
+        "account": "@RunRunesWeb",
+        "tweet": "Por tercera vez el Gobierno niega credenciales a periodistas de CNN: Esta vez fue el turno de Patricia Janiot - http://t.c\u00c9",
+        "source": "Caracas - Venezuela",
+        "location": {
+            "lat": 10.4696404,
+            "lng": -66.8037185
+        },
+        "time": "Thursday, October 16, 14"
+    },
+    {
+        "count": "189",
+        "account": "@leyawn",
+        "tweet": ".@CNN http://t.co/djxwqlUkO6",
+        "source": "brooklyn, USA",
+        "location": {
+            "lat": 33.7489954,
+            "lng": -73.9441579
+        },
+        "time": "Thursday, October 16, 14"
+    },
+    {
+        "count": "1373",
+        "account": "@cnnbrk",
+        "tweet": "Vice President Biden's son discharged from Navy Reserve after testing positive for cocaine. http://cnn.it/1xWVoue .",
+        "source": "Atlanta ,USA",
+        "location": {
+            "lat": 33.7489954,
+            "lng": -84.3879824
+        },
+        "time": "Thursday, October 16, 14"
+    },
+    {
+        "count": "72",
+        "account": "@cnni",
+        "tweet": "Killer #Ebola virus is outpacing efforts to contain it but there is progress on vaccines, expert Roy Anderson says. http://cnn.it/1sXZLWT\u00ca",
+        "source": "Hong Kong ",
+        "location": {
+            "lat": 22.396428,
+            "lng": 114.109497
+        },
+        "time": "Thursday, October 16, 14"
+    },
+    {
+        "count": "45",
+        "account": "FartToContinue",
+        "tweet": ".@CNN Fixed this #GamerGate thing for you",
+        "source": "Cleveland, Ohio",
+        "location": {
+            "lat": 41.49932,
+            "lng": -81.6943605
+        },
+        "time": "Thursday, October 16, 14"
+    }
+]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>GitHub Explore</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans">
+    <link rel="stylesheet" href="../static/css/overview.css">
+    <link rel="shortcut icon" href="../static/images/github-explorer-favicon.ico">
+    <script type="text/javascript" src="../static/js/vendor/d3.min.js"></script>
+    <script type="text/javascript" src="../static/js/vendor/jquery-2.1.1.min.js"></script>
+    <div id="tooltip" class="hidden">
+        <p><b>Number of Repositories: </b><span id="repo-length"></span></b></p>
+    </div>
+</head>
+<body>
+<div id="main-container">
+    <div id="header">
+        <div id="image-section">
+            <img src="../static/images/github-explorer-icon.png" id="main-icon">
+        </div>
+        <div id="nav-bar-section">
+            <ul id="nav-list">
+                <li class="navs"><a href="/contactus">&nbsp;Contact Us&nbsp;</a></li>
+                <li class="navs"><a id="active" href="/start">&nbsp;Start&nbsp;</a></li>
+                <li class="navs"><a href="/">&nbsp;Home&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="body-content">
+        <div id="left-section">
+            <div id="profile">
+                <div id="profile-image">
+                    <img src="https://avatars.githubusercontent.com/u/50278?v=3" id="profile-img">
+                </div>
+                <br/>
+                <div id="data">
+                    <div id="profile-name">
+                        <label class="profile-labels">Name: </label>
+                        <label class="profile-labels">{{profile["profile"]["name"]}}</label>
+                    </div>
+                    <div id="profile-started">
+                        <label class="profile-labels">GitHub Birthday: </label>
+                        <label class="profile-labels" id="started-at"></label>
+                    </div>
+                    <div id="profile-website">
+                        <label class="profile-labels"><a id="website-link" target="_blank" href="">Github Link</a></label>
+                    </div>
+                </div>
+            </div>
+            <div id="legend">
+                <div>
+                    <label>1. Click on a year to see details for that year!</label>
+                </div>
+                <div>
+                    <label>2. Click on a language to see details for that language!</label>
+                </div>
+            </div>
+        </div>
+        <div id="right-section">
+            <div id="overview-details">
+                <svg id="main-svg"></svg>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../static/js/overview.js"></script>
+<script type="text/javascript">
+    var date = new Date('{{profile["profile"]["created_at"]}}');
+    $('#started-at').text(date.toDateString());
+
+    var image = '{{profile["profile"]["avatar_url"]}}';
+    $("#profile-img").attr("src",image);
+
+    var html_url = '{{profile["profile"]["html_url"]}}';
+    $('#website-link').attr('href' , html_url);
+</script>
+</body>
+</html>

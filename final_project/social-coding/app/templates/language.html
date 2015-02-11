@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../static/css/year.css">
+    <link rel="shortcut icon" href="../static/images/github-explorer-favicon.ico">
+    <script type="text/javascript" src="../static/js/vendor/d3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans">
+    <script type="text/javascript" src="../static/js/vendor/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/vendor/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="../static/js/vendor/jquery-ui.min.css">
+    <div id="tooltip" class="hidden">
+        <p><b><span id="number-repos"></span></b></p>
+    </div>
+</head>
+<body>
+<div id="main-container">
+    <div id="header">
+        <div id="image-section">
+            <img src="../static/images/github-explorer-icon.png" id="main-icon">
+        </div>
+        <div id="nav-bar-section">
+            <ul id="nav-list">
+                <li class="navs"><a href="/contactus">&nbsp;Contact Us&nbsp;</a></li>
+                <li class="navs"><a id="active" href="/start">&nbsp;Start&nbsp;</a></li>
+                <li class="navs"><a href="/">&nbsp;Home&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="body-content">
+        <div id="left-section">
+            <div id="profile">
+                <div id="profile-image">
+                    <img src="https://avatars.githubusercontent.com/u/50278?v=3" id="profile-img">
+                </div>
+                <br/>
+                <div id="data">
+                    <div id="profile-name">
+                        <label class="profile-labels">Name: </label>
+                        <label class="profile-labels">{{profile["profile"]["name"]}}</label>
+                    </div>
+                    <div id="profile-started">
+                        <label class="profile-labels">GitHub Birthday: </label>
+                        <label class="profile-labels" id="started-at"></label>
+                    </div>
+                    <div id="profile-website">
+                        <label class="profile-labels"><a id="website-link" target="_blank" href="">Github Link</a></label>
+                    </div>
+                </div>
+
+            </div>
+            <div id="legend">
+
+            </div>
+        </div>
+        <div id="right-section">
+            <div id="overview-details">
+                <svg id="language-svg"></svg>
+                <div id="dialog-modal" title="Basic modal dialog" style="display: none">
+                    <div>
+                        <div id="popup-repo-name">
+                            <label style="padding-left: 0.07em; font-size: 15px ; align-content: center"><strong id="repoName"></strong></label><hr>
+                        </div>
+
+                       <div id="popup-profile-url">
+                        <!--<p><label class="popup-labels" style="font-size: 15px">Profile Url :</label>-->
+                            <!--<a id = "profile_url1" href=""/><span id="profile_url" style="font-size: 15px"></span></p>-->
+
+                            <p><label class="popup-labels" style="font-size: 15px">Respository Url :</label>
+                               <a id="repo_url" href="" target="_blank"></a></p>
+                        </div>
+
+                        <!--<div id="popup-repo-url">-->
+                        <!--<p><label class="popup-labels-url" style="font-size: 15px">Repository Url :</label>-->
+                            <!--<a href="" /><span id="repo_url" style="font-size: 15px"></span></p>-->
+                        <!--</div>-->
+                        <!--<div id="tooltip" class="hidden">-->
+                            <!--<p><b></b><span id="number-repos"></span></b></p>-->
+                        <!--</div>-->
+
+                        </div>
+                </div></br>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../static/js/language.js"></script>
+
+<script type="text/javascript">
+
+    var date = new Date('{{profile["profile"]["created_at"]}}');
+    $('#started-at').text(date.toDateString());
+
+    var image = '{{profile["profile"]["avatar_url"]}}';
+    $("#profile-img").attr("src",image);
+
+    var html_url = '{{profile["profile"]["html_url"]}}';
+    $('#website-link').attr('href' , html_url);
+
+    var profile_url = '{{profile["profile"]["html_url"]}}';
+    console.log(profile_url)
+    $('#profile_url1').attr('href' , profile_url);
+
+
+
+</script>
+</body>
+</html>

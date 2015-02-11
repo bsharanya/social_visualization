@@ -1,0 +1,45 @@
+{
+    "Organizations": [
+        {
+            "name": "Facebook",
+            "color": "#e31933",
+            "search_key": "facebook"
+        },
+        {
+            "name": "Twitter, Inc.",
+            "color": "#c5c3c3",
+            "search_key": "twitter"
+        },
+
+        {
+            "name": "LinkedIn",
+            "color": "#c5c3c3",
+            "search_key": "linkedin"
+        },
+        {
+            "name": "Google",
+            "color": "#294c05",
+            "search_key": "google"
+        },
+        {
+            "name": "Youtube",
+            "color": "#c5c3c3",
+            "search_key": "youtube"
+        },
+        {
+            "name": "Microsoft",
+            "color": "#0000ff",
+            "search_key": "microsoft"
+        },
+        {
+            "name": "Apache",
+            "color": "#c5c3c3",
+            "search_key": "apache"
+        },
+        {
+            "name": "Mozilla",
+            "color": "#c5c3c3",
+            "search_key": "mozilla"
+        }
+    ]
+}
